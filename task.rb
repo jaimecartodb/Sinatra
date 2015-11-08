@@ -1,4 +1,6 @@
 require 'date'
+require '/Users/jaimedemora/Ironhack/Week5/Sinatra/todo.rb'
+require 'pry'
 
 class Task
 	attr_reader :content, :id, :complete, :created_at
@@ -42,3 +44,16 @@ puts task.created_at
 # 1
 task2 = Task.new("Wash the car")
 puts task2.id
+task3 = Task.new("Buy shoes")
+task4 = Task.new("Buy mermelade")
+
+
+todol = TodoList.new
+todol.add_task(task)
+todol.add_task(task2)
+todol.add_task(task3)
+todol.add_task(task4)
+puts todol.tasks[0].content
+todol.delete_task(0)
+##binding.pry
+puts todol.tasks[1].content
