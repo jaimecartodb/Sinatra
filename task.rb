@@ -10,7 +10,7 @@ class Task
 		@id = @@current_id
 		@@current_id += 1
 		@complete = false
-		@created_at = Date.today
+		@created_at = Time.now
 		@updated_at = nil
 	end
 
@@ -48,12 +48,17 @@ task3 = Task.new("Buy shoes")
 task4 = Task.new("Buy mermelade")
 
 
-todol = TodoList.new
+todol = TodoList.new("Josh")
 todol.add_task(task)
 todol.add_task(task2)
 todol.add_task(task3)
 todol.add_task(task4)
 puts todol.tasks[0].content
 todol.delete_task(0)
-##binding.pry
+puts todol.tasks[0].content
+##how come if it's deleted it still prints its value??
 puts todol.tasks[1].content
+todol.find_task_by_id(3)
+
+puts todol.sort_by_created
+
