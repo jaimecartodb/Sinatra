@@ -1,9 +1,12 @@
+require_relative "/Users/jaimedemora/Ironhack/Week5/Sinatra/task.rb"
+
+
 class TodoList
 	attr_reader :tasks, :user
 	def initialize(user)
 		@user = user
 		@tasks = []
-	    @todo_store = YAML::Store.new("tasks.yml")
+	##    @todo_store = YAML::Store.new("tasks.yml")
 	end
 
 	def add_task(task)

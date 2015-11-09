@@ -19,7 +19,7 @@ class Task
 	end
 
 	def completed!
-		@complete = true
+		return true
 	end
 
 	def make_incomplete!
