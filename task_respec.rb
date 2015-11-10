@@ -1,5 +1,5 @@
 require_relative "/Users/jaimedemora/Ironhack/Week5/Sinatra/task.rb"
-require "spec_helper"
+require_relative './spec_helper'
 require 'date'
 
 describe "The Class list" do 
