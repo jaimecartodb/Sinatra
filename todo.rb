@@ -1,6 +1,5 @@
 require_relative "/Users/jaimedemora/Ironhack/Week5/Sinatra/task.rb"
 
-
 class TodoList
 	attr_reader :tasks, :user
 	def initialize(user)
