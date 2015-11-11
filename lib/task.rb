@@ -1,5 +1,5 @@
+require_relative'/Users/jaimedemora/Ironhack/Week5/Sinatra/lib/todo.rb'
 require 'date'
-require '/Users/jaimedemora/Ironhack/Week5/Sinatra/lib/todo.rb'
 require 'pry'
 
 class Task

@@ -27,4 +27,13 @@ describe "The TodoList Class" do
 		@list = TodoList.new("John")
 		expect(@list.user).to eq("John")
 	end
+
+	it "saves the tasks correctly into a file"
+	todo_list = TodoList.new("Josh")
+	task = Task.new("Walk the dog")
+	task2 = Task.new("Buy the milk")
+	task3 = Task.new("Make my todo list into a web app")
+	todo_list.save
+	@expect
+	##how do I do this????
 end
