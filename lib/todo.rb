@@ -1,4 +1,4 @@
-require_relative "/Users/jaimedemora/Ironhack/Week5/Sinatra/task.rb"
+require_relative "/Users/jaimedemora/Ironhack/Week5/Sinatra/lib/task.rb"
 require 'YAML'
 
 class TodoList
@@ -6,7 +6,7 @@ class TodoList
 	def initialize(user)
 		@user = user
 		@tasks = []
-		@todo_store = YAML::Store.new("tasks.yml")
+	##	@todo_store = YAML::Store.new("tasks.yml")
 	end
 
 	def add_task(task)
